@@ -2,33 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Blog preview card</title>
+  <title>Frontend Mentor | Blog Preview Card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-  Learning
+  <main class="container">
+    <article class="blog-post">
+      <!-- Blog Post Image -->
+      <img src="./assets/images/illustration-article.svg" class="post-image" alt="Illustration for article">
+      <section class="content">
+        <!-- Blog Post Header -->
+        <header>
+          <div class="post-meta">
+            <span class="category">Learning</span>
+            <time datetime="2023-12-21" class="date">Published 21 Dec 2023</time>
+          </div>
+          <h2 class="title">HTML & CSS foundations</h2>
+        </header>
 
-  Published 21 Dec 2023
+        <!-- Blog Post Content -->
+        
+          <p class="content">
+            These languages are the backbone of every website, defining structure, content, and presentation.
+          </p>
+        </section>
 
-  HTML & CSS foundations
+      <!-- Author Information -->
+      <div class="author">
+        <figure class="avatar">
+          <img src="./assets/images/image-avatar.webp" class="avatar-image" alt="Greg Hooper's avatar">
+          <figcaption class="avatar-info">Greg Hooper</figcaption>
+        </figure>
+      </div>
+    </article>
+  </main>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+  <!-- Attribution -->
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.roomacarthur.dev" target="_blank">roomacarthur.dev</a>.</p>
+  </footer>
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
